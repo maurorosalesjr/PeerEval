@@ -29,3 +29,32 @@
 ### Question 2 - Array Deduping
   -removes duplicates in an array
   -first solution should not use filter(), second solution use filter()
+
+
+
+### Question 3 - Compressing Strings
+    -takes a string o repeated characters and compresses them using a number to show how many times the cahracter has been compressed. ex aaa would be 3a
+
+
+
+
+
+
+
+
+### Question 4- checking for uniqueness
+  -determines whether all the elements in a string are unigue
+  -no array
+  -no array methods
+  -should return a boolean
+
+  first thought- use for loop to iterate through string
+    if(i !== (i-1)){
+      return true
+    } else {
+      return false
+    }
+
+
+### Question 5 - array sorting
+  -sort array without using sort()
