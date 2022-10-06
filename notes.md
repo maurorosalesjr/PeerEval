@@ -22,6 +22,10 @@
 
   -More question 1 notes to come later
 
+11:02- realized that i the input is a string and i need to create a way to split the input string at the space and push that into an input array
+
+12:02 lunch
+
 ### Question 2 - Array Deduping
   -removes duplicates in an array
   -first solution should not use filter(), second solution use filter()
