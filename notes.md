@@ -75,10 +75,27 @@ filter can copy, but a shallow copy
 filter can search array
 
 ### Question 3 - Compressing Strings
-    * takes a string o repeated characters and compresses them using a number to show how many times the cahracter has been compressed. ex aaa would be 3a
+    * takes a string w/ repeated characters and compresses them using a number to show how many times the cahracter has been compressed. ex aaa would be 3a
+the question im most afraid of
+
+google searched: string with repeated characters and compresses them in javascript
+
+best reference: https://js-algorithms.tutorialhorizon.com/2015/09/14/string-compression-using-the-counts-of-repeated-characters/
 
 
-
+function strComp(str) {
+  let output = '';
+  let count = 0;
+  
+  for(i = 0; i < str.length; i++) {
+    count++;
+    if(str[i] != str[i+1]) {
+      output += str[i] + count;
+      count = 0;
+    }
+  }
+  return output;
+}
 
 
 
