@@ -123,3 +123,26 @@ needs to be DRY'd up
   * sort array without using sort()
 
 Sat 4p researching sorts
+
+attempting merge sort
+merge sort seems to need two functions. one to split the array in two, and another to sort through both halves
+
+quick sorst seems similar to merge sort,
+
+i like insertion sort, attempting
+solution so far:
+
+function insSort(unsortedArray){
+for ( i = 1; i < unsortedArray.length; i++) {
+  let j = i - 1;
+  let temp = unsortedArray[i];
+  while(j >= 0 && unsortedArray[j] > temp){
+    unsortedArray[j + 1] = unsortedArray[j];
+    j--;
+  }
+  unsortedArray[j+1] = temp;
+}
+return unsortedArray
+}
+
+got this from: https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-4.php#:~:text=Insertion%20sort%20is%20a%20simple,%2C%20heapsort%2C%20or%20merge%20sort.
