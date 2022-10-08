@@ -27,6 +27,14 @@
 12:02 lunch
 1:47 came up with solution i like
 
+Sat 2:30, cant figure out why my original solution only works when i use 
+let inputArr = [""];
+
+instead of:
+let inputArr = [];
+
+refactored solution
+
 ### Question 2 - Array Deduping
   * removes duplicates in an array
   * first solution should not use filter(), second solution use filter()
