@@ -35,10 +35,23 @@ let inputArr = [];
 
 refactored solution
 
+function urlMaker(inputString){
+  let inputArr = [];
+  // const output = inputArr.join('');
+
+  for(var i = 0; i < inputString.length; i++)
+  if(inputString[i] === " ") {
+    inputArr.push("20%");
+  } else {
+    inputArr.push(inputString[i]);
+  } return inputArr.join('');
+}
+
 ### Question 2 - Array Deduping
   * removes duplicates in an array
   * first solution should not use filter(), second solution use filter()
 
+saturday 3:16 researching Set
 
 
 ### Question 3 - Compressing Strings
@@ -66,6 +79,24 @@ refactored solution
 
 2pm working on this solution but i have to go pick up the kids from school
 
+have been researching indexOf()
+this website helped me figure out how to find the index of a string 
+* https://buzzcoder.gitbooks.io/codecraft-javascript/content/string/loop-through-a-string.html 
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf
+
+solution i like so far:
+
+function unique(str){
+  for(i=0; i < str.length; i++){
+    if(str.replace(/\s+/g, '').indexOf(str[i]) !== str.replace(/\s+/g, '').lastIndexOf(str[i])){
+      return false
+    } else {
+      return true
+    }
+  }
+  }
+needs to be DRY'd up 
 
 ### Question 5 - array sorting
   * sort array without using sort()
