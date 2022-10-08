@@ -67,6 +67,12 @@ function deduper(arr) {
   return dedupingArr;
 }
 
+websites used for reference:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+
+
+filter can copy, but a shallow copy
+filter can search array
 
 ### Question 3 - Compressing Strings
     * takes a string o repeated characters and compresses them using a number to show how many times the cahracter has been compressed. ex aaa would be 3a
@@ -115,3 +121,5 @@ needs to be DRY'd up
 
 ### Question 5 - array sorting
   * sort array without using sort()
+
+Sat 4p researching sorts
