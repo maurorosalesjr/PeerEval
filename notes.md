@@ -48,10 +48,24 @@ function urlMaker(inputString){
 }
 
 ### Question 2 - Array Deduping
+Input: [7, 9, "hi", 12, "hi", 7, 53]
+Output: [7, 9, "hi", 12, 53]
+
+
   * removes duplicates in an array
   * first solution should not use filter(), second solution use filter()
 
 saturday 3:16 researching Set
+
+can set be used like a spread opperator?
+from the mdn docs, probably. but set works with filter
+
+solution i like:
+
+function deduper(arr) {
+  let dedupingArr = [...new Set(arr)];
+  return dedupingArr;
+}
 
 
 ### Question 3 - Compressing Strings
@@ -96,6 +110,7 @@ function unique(str){
     }
   }
   }
+
 needs to be DRY'd up 
 
 ### Question 5 - array sorting
